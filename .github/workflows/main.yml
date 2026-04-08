@@ -7,10 +7,9 @@ jobs:
     env:
       API_BASE_URL: 'http://localhost:3000'
       PORT: 4000
-
     steps:
       - name: Clone do Projeto
-        uses: actions/chechout@v4
+        uses: actions/checkout@v4
       - name: Instalando as dependencias do projeto
         run: npm install
       - name: Iniciando o servidor de mocks
